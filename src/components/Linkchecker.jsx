@@ -6,6 +6,7 @@ export function Linkchecker() {
   useEffect(() => {
     const mouseover = (event) => {
       const domElem = event.target;
+      // console.log("Mouseover on", domElem);//prüft, ob die Funktion korrekt getriggert wird und welches Element betroffen ist
       if (domElem.nodeName === "A") {
         setLink(domElem.href);
       } else {
